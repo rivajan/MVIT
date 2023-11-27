@@ -1,0 +1,86 @@
+/* App.css */
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.menu-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #ccc;
+}
+
+.menu-button:hover,
+.submenu-button:hover {
+  background-color: #bbb;
+}
+
+.upload-button {
+  padding: 12px 24px; /* Slightly bigger than other buttons */
+  margin: 10px;
+  background-color: #61dafb; /* Distinctive blue color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Larger font size */
+}
+
+.upload-button:hover {
+  background-color: #21a1f1;
+}
+
+.settings-button {
+  background-color: #eee; /* Different from upload-button */
+}
+
+/* Submenu styles */
+.settings-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: -10px; /* Move submenu closer to the settings button */
+}
+
+.submenu-button {
+  background-color: #f7f7f7; /* Subtle background for submenu items */
+  margin-left: 20px; /* Indent submenu items */
+}
+
+/* Focus styles */
+button:focus,
+label[for="fileUpload"]:focus {
+  outline: 2px solid blue;
+}
+
+/* Dyslexia-friendly font */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('./Assets/Fonts/OpenDyslexic-Regular.otf') format('truetype');
+}
+
+.dyslexia-font {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.settings-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
